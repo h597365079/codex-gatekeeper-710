@@ -1,0 +1,10 @@
+# Codex 沙盒模式配置
+sandbox_mode = "workspace-write"
+approval_policy = "on-request"
+approvals_reviewer = "user"
+
+# 规则：对指定路径的操作触发额外审批
+[[rules]]
+path = ".codex/"
+action = "write"
+message = "修改 Codex 配置需要额外确认"
